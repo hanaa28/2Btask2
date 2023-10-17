@@ -1,0 +1,217 @@
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Open Sans', 'sans-serif';
+   
+}
+ul{
+    list-style: none;
+}
+a{
+text-decoration: none;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+}
+.container .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-style: oblique;
+    margin: 15px 0
+}
+nav{
+    width: 65%;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+@media (max-width:767px) {
+    .container .content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-style: oblique;
+        flex-direction: column;
+        line-height: 1.5;
+    }
+    nav{
+        width: 100%;
+    }
+    nav ul{
+        display: flex;
+        
+        justify-content: space-between;
+    }
+}
+.landing{
+    height: 91Vh;
+    background-color: black;
+    background-image: url(../sun.jpeg);
+    background-size: cover;
+    position: relative;
+}
+.landing .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 40%);
+  }
+  .landing .text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 28px;
+    line-height: 55px;
+  }
+  
+  .landing .text span{
+    color: rgb(110, 70, 21);
+    font-size: 55px;
+  }
+  .landing a{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px;
+    color: antiquewhite;
+    background: burlywood;
+    font-size: 22px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-align: center;
+  }
+  .landing .top-l{
+    background: rgb(110, 70, 21);
+    width: 310px;
+    height: 10px;
+    position: absolute;
+    top: 10px;
+    left: 26px;
+    border-radius: 3px
+  }
+  .landing .top-lb{
+    background: rgb(110, 70, 21);
+    width: 10px;
+    height: 110px;
+    position: absolute;
+    top: 10px;
+    left: 26px;
+    border-radius: 3px
+  }
+ 
+  .landing .top-r{
+    background: rgb(110, 70, 21);
+    width: 226px;
+    height: 10px;
+    position: absolute;
+    right: 26px;
+    border-radius: 3px;
+    top: 28px;
+  }
+  .landing .top-rb{
+    background: rgb(110, 70, 21);
+    width: 10px;
+    height: 226px;
+    position: absolute;
+    right: 26px;
+    border-radius: 3px;
+    top: 34px;
+}
+.landing .bottom-lt{
+    position: absolute;
+    width: 10px;
+    background: rgb(110, 70, 21);
+    height: 310px;
+    left: 295px;
+    top: 130px;
+    border-radius: 3px;
+}
+.landing .bottom-lb{
+    position: absolute;
+    width: 110px;
+    background: rgb(110, 70, 21);
+    height: 10px;
+    left: 296px;
+    bottom: 121px;
+    border-radius: 3px;
+}
+.landing .one{
+    position: absolute;
+    width: 7px;
+    height: 75px;
+    background: rgb(110, 70, 21);
+    border-radius: 3px;
+    bottom: 5px;
+    right: 41px;
+    transform: rotate(8deg);
+}
+.landing .two{
+    position: absolute;
+    width: 7px;
+    height: 75px;
+    background: rgb(110, 70, 21);
+    border-radius: 3px;
+    bottom: 5px;
+    right: 68px;
+    transform: rotate(9deg);
+}
+.landing .three{
+    position: absolute;
+    width: 60px;
+    height: 6px;
+    background: rgb(110, 70, 21);
+    border-radius: 3px;
+    bottom: 52px;
+    right: 28px;
+}
+.landing .four{
+    position: absolute;
+    width: 60px;
+    height: 6px;
+    background: rgb(110, 70, 21);
+    border-radius: 3px;
+    bottom: 30px;
+    right: 32px;
+}
+@media (max-width:1200px) {
+    .bottom-lb ,.bottom-lt{
+        display: none;
+    }
+}
